@@ -1,6 +1,7 @@
 
 //Compilor itself send 1 if there is no data member so we not need to take care
-
+//Using delete on a pointer returned by new [] or delete [] on a pointer returned 
+//by new results in undefined behavior.
 
 #include<iostream>
 #include<vector>
