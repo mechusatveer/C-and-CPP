@@ -8,7 +8,15 @@
 //Constructor will not even get called
 // new will throw an exception in case of memory failure
 
-//we use std::nothrow with new operator so in place of exception new will return a null ptr in case of failure
+//we use std::nothrow with new operator so in place of exception
+//new will return a null ptr in case of failure
+
+/********************************************************************/
+How to handle destructor failure
+
+Golden rule - never throw an exception
+Write this failure in log file
+/********************************************************************/
 
 #include<iostream>
 #include<vector>
