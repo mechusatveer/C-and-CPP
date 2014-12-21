@@ -3,6 +3,9 @@
 //Using delete on a pointer returned by new [] or delete [] on a pointer returned 
 //by new results in undefined behavior.
 
+/**********************************************************************************/
+
+
 #include<iostream>
 #include<vector>
 #include<stdlib.h>
