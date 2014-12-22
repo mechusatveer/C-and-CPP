@@ -3,6 +3,15 @@
 //Using delete on a pointer returned by new [] or delete [] on a pointer returned 
 //by new results in undefined behavior.
 
+  void operator delete(void* ptr) throw() //keep throw as empty so if u try to throw an exception it raise error
+  {
+       free(ptr);
+  }
+  void operator delete[](void* ptr) throw()
+  {
+       free(ptr);
+  }
+
 /**********************************************************************************/
 
 
@@ -27,11 +36,11 @@ class A
   {
        return malloc(s);
   }
-  void operator delete(void* ptr)
+  void operator delete(void* ptr) throw()
   {
        free(ptr);
   }
-  void operator delete[](void* ptr)
+  void operator delete[](void* ptr) throw()
   {
        free(ptr);
   }
