@@ -18,6 +18,9 @@
 new & delete should write in pairs.
 do not do like you override delete but not write new for your class
 
+void* raw = operator new(sizeof(Foo), pool);
+Foo *a = new(raw)Foo();
+
 /**********************************************************************************/
 
 #include<iostream>
