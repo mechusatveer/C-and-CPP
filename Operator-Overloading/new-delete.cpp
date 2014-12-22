@@ -15,6 +15,9 @@
 //Both new and delete are static function even u not declared them
 //bcoz they provide utility job so make static
 
+new & delete should write in pairs.
+do not do like you override delete but not write new for your class
+
 /**********************************************************************************/
 
 
