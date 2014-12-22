@@ -12,6 +12,9 @@
        free(ptr);
   }
 
+//Both new and delete are static function even u not declared them
+//bcoz they provide utility job so make static
+
 /**********************************************************************************/
 
 
@@ -28,19 +31,19 @@ class A
   {
 
   }
-  void* operator new(size_t s) throw(std::bad_alloc)
+  static void* operator new(size_t s) throw(std::bad_alloc)
   {
       return malloc(s);
   }
-  void* operator new[](size_t s)throw(std::bad_alloc)
+  static void* operator new[](size_t s)throw(std::bad_alloc)
   {
        return malloc(s);
   }
-  void operator delete(void* ptr) throw()
+  static void operator delete(void* ptr) throw()
   {
        free(ptr);
   }
-  void operator delete[](void* ptr) throw()
+  static void operator delete[](void* ptr) throw()
   {
        free(ptr);
   }
