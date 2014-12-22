@@ -19,10 +19,14 @@ class Matrix
         data = new int[row*col];
     }
 
-    int& operator()(int r, int c)
+    int& operator()(int r, int c) //left side call
     {
        cout<<"1"<<endl;
        return data[r*col + c];
+    }
+    int operator(int r, int c) const //right side call
+    {
+        return data[r*col + c];
     }
 
 };
