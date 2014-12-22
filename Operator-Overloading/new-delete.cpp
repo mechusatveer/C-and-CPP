@@ -20,7 +20,6 @@ do not do like you override delete but not write new for your class
 
 /**********************************************************************************/
 
-
 #include<iostream>
 #include<vector>
 #include<stdlib.h>
@@ -34,32 +33,40 @@ class A
   {
 
   }
+  ~A()
+  {
+     cout<<"Destructor called"<<endl;
+  }
   static void* operator new(size_t s) throw(std::bad_alloc)
   {
+      cout<<"Base 1 constructor called "<<s<<endl;
       return malloc(s);
   }
-  static void* operator new[](size_t s)throw(std::bad_alloc)
+
+  static void operator delete(void* ptr, size_t s) throw()
   {
-       return malloc(s);
-  }
-  static void operator delete(void* ptr) throw()
-  {
-       free(ptr);
-  }
-  static void operator delete[](void* ptr) throw()
-  {
+       cout<<"Base 1 destructor called "<<s<<endl;
        free(ptr);
   }
 
+  static void* operator new[](size_t s) throw(std::bad_alloc)
+  {
+      cout<<"Base 2 constructor called "<<s<<endl;
+      return malloc(s);
+  }
+
+  static void operator delete[](void* ptr, size_t s) throw()
+  {
+       cout<<"Base 2 destructor called "<<s<<endl;
+       free(ptr);
+  }
 };
 
 int main()
 {
-    A *a = new A();
-    A* b = new A[10];
-
-    delete a;
+    A *b = new A[10];
     delete b;
     delete []b;
     return 0;
 }
+
