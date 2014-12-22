@@ -73,3 +73,19 @@ int main()
     return 0;
 }
 
+void* operator new(size_t nbytes)
+{
+  if (nbytes == 0)
+  nbytes = 1; // so all alloc's get a distinct address
+  void* ans = malloc(nbytes + 4); // overallocate by 4 bytes
+  *(Pool**)ans = NULL; // use NULL in the global new
+  return (char*)ans + 4; // don't let users see the Pool*
+}
+void* operator new(size_t nbytes, Pool& pool)
+{
+  if (nbytes == 0)
+  nbytes = 1; // so all alloc's get a distinct address
+  void* ans = pool.alloc(nbytes + 4); // overallocate by 4 bytes
+  *(Pool**)ans = &pool; // put the Pool* here
+  return (char*)ans + 4; // don't let users see the Pool*
+}
