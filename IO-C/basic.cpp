@@ -61,6 +61,9 @@ int main()
 
     puts("Enter name:-\n");
     scanf("%d%s%s",&x,a,b);
+    //scanset
+    scanf("%d%[a-z]%s%s",&x,a,b);
+    scanf("%d%[abcd]%s%s",&x,a,b);
     printf("%d %s %s",x,a,b);
 
 
