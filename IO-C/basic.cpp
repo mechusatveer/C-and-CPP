@@ -50,13 +50,17 @@ int main()
     //char arr[20];
     //gets(arr);//Keep reading in line buffer till ENTER not pressed
     //puts(arr);
+    //scanf("%20s",arr);
 
     int x;
     char a[10];
     char b[10];
-    push variable to stirng till white space 
+
+    //123Satveer Singh also ok
+    //123 Satveer Singh also ok
+
     puts("Enter name:-\n");
-    scanf("%d%s, %s",&x,a,b);
+    scanf("%d%s%s",&x,a,b);
     printf("%d %s %s",x,a,b);
 
 
