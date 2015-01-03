@@ -76,3 +76,36 @@ int main () {
 	cout << "y1 = " << y1 << " y2 = " << y2 << endl;
 	return 0;
 }
+
+X fn;
+...
+fn(arg1, arg2);	// call operator () for function object fn
+
+This is equal to 
+fn.operator()(arg1,arg2)
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+class Print
+{
+public:
+	void operator()(int elem) const
+	{
+		cout << elem << " ";
+	}
+};
+
+int main () {
+	vector<int> vect;
+	for (int i=1; i<10; ++i) {
+		vect.push_back(i);
+	}
+
+	Print print_it;
+	for_each (vect.begin(), vect.end(), print_it);
+	cout << endl;
+	return 0;
+}
