@@ -8,3 +8,32 @@ algorithms manipulating them, might copy the stored elements. Copies of auto_ptr
 because the original is set to NULL after being copied. An STL container may make copies of its 
 elements, so you can't guarantee that a valid copy of the auto_ptr will remain after the algorithm
 processing the container's elements finishes.
+
+
+the get() method returns a pointer to the object pointed by the auto_ptr object, if any, or 
+zero if it does not point to any object.
+
+#include <iostream>
+#include <memory>
+
+using namespace std;
+class A{};
+
+int main()
+{
+	auto_ptr<A> pA(new A);
+
+	cout << pA.get() << endl;
+
+	auto_ptr<A> pB(pA);
+
+	cout << pA.get() << endl;
+	cout << pB.get() << endl;
+
+	return 0;
+}
+
+Output:-
+0x8dde248
+0
+0x8dde248
