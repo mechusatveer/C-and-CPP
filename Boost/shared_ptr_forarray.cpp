@@ -17,3 +17,6 @@ Now shared_ptr will correctly call delete[] when destroying the managed object.
 With C++11, you can also use a lambda instead of the functor.
 
 std::shared_ptr<int> sp( new int[10], []( int *p ) { delete[] p; } );
+
+
+std::unique_ptr<int[]> up( new int[10] ); // this will correctly call delete[]
