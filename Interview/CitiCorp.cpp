@@ -174,7 +174,6 @@ int main()
 Error now matching function A::A()
 =====================================================================
 Problem 5
-=========
 #include<iostream>
 
 using namespace std;
@@ -220,3 +219,87 @@ write class A such a way
 
 do not forget to receive input in ref format.
 ========================================================================================
+Problem 6
+#include<stdlib.h>
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+int main()
+{
+    cout<<sizeof("GEEKS");
+    cout<<strlen("GEEKS");
+    return 0;
+}
+Ouput 
+6 5
+==========================================================================================
+Problem 7
+#include<stdlib.h>
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+template<int N>
+class A
+{
+   public:
+   virtual void print()
+   {
+       cout<<"A::print"<<endl;
+   }
+};
+
+class B : public A<2>
+{
+   public:
+   virtual void print()
+   {
+       cout<<"B::print"<<endl;
+   }
+};
+
+class C : public B
+{
+
+};
+
+int main()
+{
+    A<2> *p = new C();
+    p->print();
+    return 0;
+}
+
+Output :
+B::print
+==============================================================================
+problem 8
+#include<stdlib.h>
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+class A
+{
+   public:
+   A()
+   {
+        cout<<"Constructor called";
+   }
+   ~A()
+   {
+       cout<<"Destructor called";
+   }
+};
+
+int main()
+{
+    delete new A();
+    return 0;
+}
+
+Output:-
+constructor called
+Destructor called
+======================================================================
