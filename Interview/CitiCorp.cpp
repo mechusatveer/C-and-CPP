@@ -303,3 +303,36 @@ Output:-
 constructor called
 Destructor called
 ======================================================================
+problem 9
+
+#include<stdlib.h>
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+class A
+{
+
+   public:
+   A()
+   {
+        cout<<"Constructor called";
+   }
+   ~A()
+   {
+       cout<<"Destructor called";
+   }
+   void fun1()
+   {
+       cout<<"Fun called"<<endl;
+   }
+};
+
+int main()
+{
+    const A a;
+    a.fun1();
+    return 0;
+}
+Error:-
+Using const object we cannot call a non const function
