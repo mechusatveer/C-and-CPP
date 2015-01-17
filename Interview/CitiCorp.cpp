@@ -141,6 +141,11 @@ int main()
 I expected the output 'default constructor called',
 but I did not see anything as the output. What is the problem?
 
+Because the constructor never gets called actually.
+
+Class object(); is interpreted as the declaration of a function object taking no 
+argument and returning an object of Class [by value]
+
 ==========================================================================
 Problem 4
 
