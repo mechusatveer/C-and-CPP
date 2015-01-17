@@ -28,9 +28,11 @@ void init() {
     hasInit = 1;
 }
 
-void *malloc_mem(int num) {
+void *malloc_mem(int num)
+{
 
-    if (!hasInit) {
+    if (!hasInit)
+    {
 	
         init();
     }
@@ -42,10 +44,12 @@ void *malloc_mem(int num) {
     num += sizeof(mcb); //need to add the size of mcb
 	
 
-    while (current != lastAddr) { 
+    while (current != lastAddr)
+    { 
 	
         mcb *pcurrent = current; 
-       if (pcurrent->available && pcurrent->size >= num) { // if size is enough
+       if (pcurrent->available && pcurrent->size >= num)
+       { // if size is enough
 		
             pcurrent->available = 0; 
             ret = current; 
@@ -55,7 +59,8 @@ void *malloc_mem(int num) {
         current += pcurrent->size; //check next memory block
     }
 	
-    if (!ret) { //if there is no available memory block，or allocated first time
+    if (!ret)
+    { //if there is no available memory block，or allocated first time
 	
         sbrk(num); //adjust the size of stack end 
         ret = lastAddr; 
