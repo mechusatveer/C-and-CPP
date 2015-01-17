@@ -173,4 +173,50 @@ int main()
 
 Error now matching function A::A()
 =====================================================================
+Problem 5
+=========
+#include<iostream>
 
+using namespace std;
+
+class A
+{
+   int x;
+   int &refobj;
+   public:
+   A(int &p) : x(p),refobj(p)
+   {
+
+   }
+   ~A()
+   {
+
+       refobj = x;
+   }
+};
+
+int main()
+{
+   int arr[] = {10,15};
+
+       int j = 5;
+       {
+           A a(j);
+           A b(arr[0]);
+           A c(arr[1]);
+           j = arr[0];
+           arr[0] = arr[1];
+           arr[1] = j;
+           cout<<j<<" "<<arr[0]<<" "<<arr[1]<<endl;
+       }
+    cout<<j<<" "<<arr[0]<<" "<<arr[1]<<endl;
+    return 0;
+}
+
+We want output as
+10 15 10
+5 10 15
+write class A such a way
+
+do not forget to receive input in ref format.
+========================================================================================
