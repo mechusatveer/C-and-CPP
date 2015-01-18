@@ -336,3 +336,74 @@ int main()
 }
 Error:-
 Using const object we cannot call a non const function
+======================================================================================
+
+problem 10
+
+main is not a reserve name in c++ we can make a method with main name inside a class or struct
+but we cannot make a class name as main.
+
+below programme give error
+
+#include<stdlib.h>
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+class main
+{
+
+   public:
+   main()
+   {
+        cout<<"Constructor called";
+   }
+   ~main()
+   {
+       cout<<"Destructor called";
+   }
+   void fun()
+   {
+       cout<<"Fun called"<<endl;
+   }
+};
+
+int main()
+{
+    main m;
+    m.fun();
+    return 0;
+}
+
+below programme run well...
+
+#include<stdlib.h>
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+class Main
+{
+
+   public:
+   Main()
+   {
+        cout<<"Constructor called";
+   }
+   ~Main()
+   {
+       cout<<"Destructor called";
+   }
+   void main()
+   {
+       cout<<"Fun called"<<endl;
+   }
+};
+
+int main()
+{
+    Main m;
+    m.main();
+    return 0;
+}
+=============================================================================================
