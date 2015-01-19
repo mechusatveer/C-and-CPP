@@ -165,13 +165,14 @@ T.
 Question 1:-
 
 Which of the following could be determined exactly if the position of either L or P were given pick one of the choices
+
 (A) The identity of L‟s date 
 (B) The identity of P‟s date 
 (C) The identity of L‟s date or P‟s date, but not both 
 (D) Which woman is no seated between two men 
 
 
-Answer:- The identity of L’s date or P’s date, but not both(Answer By Ajay)
+Answer:- C)The identity of L’s date or P’s date, but not both
 
                -------------------------------------------------------------
 Question 2:-
@@ -188,5 +189,22 @@ In order to determine the position of T, it is necessary to use how many of the 
 Pick one of the choices
 
 a)3  b)4  c)6  d)7
-Answer:- TODO
+Answer:- C)6
+             ----------------------------------------------------------------
+Question 4:-
+         
+U‟s date may be: 
+(A) N or L (B) L or P (C) N or P (D) N, L or P 
+Answer:- D
+            --------------------------------------------------------------------
+Question 5:-
+
+Which of the following cannot be determined on the basis of the information given? 
+I. Who occupies the seat farthest to the left. 
+II. Who occupies the seat farthest to the right. 
+III. Which other women are nearest to T 
+(A) I only (B) III only (C) I and II only (D) II and III only
+
+Answer:- B
+
 =================================================================================================================
