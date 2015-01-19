@@ -208,3 +208,54 @@ III. Which other women are nearest to T
 Answer:- B
 
 =================================================================================================================
+Question
+A trapezoid ABCD is formed by adding the isosceles right triangle BCE with base 5 inches to the rectanqh
+ABED where DE Is t Inches. What Is the area of the trapezoid In square Inches?
+Pick one of the choices
+5t+ 12.5
+5t + 25
+2.5t + 12.5
+(t + 5)2
+t2+25
+
+Answer:- A  5t+12.5
+=================================================================================================================
+
+Question:-
+
+xy < 0  A = (x+y)^2  B = x^2 + y^2
+
+Answer:- B is larger
+=================================================================================================================
+
+Question:-
+
+100 to x+100 range
+no of divisible of 6 = A
+no of divisible of 9 = B
+
+which is larger
+Answer:- Cannot say anything based on this info
+===============================================================================================================
+Question:-
+
+A = 7 pages print time at the rate of 6 pages per unit
+B = 6 pages print time at the rate of 7 pages per unit
+
+Answer:- A is larger
+==============================================================================================================
+
+Question:-
+
+x > 0
+
+which is large
+A = 10x
+B = 10/x
+
+Answer:-Cannot say anything based on this info
+===============================================================================================================
+
+
+
+
