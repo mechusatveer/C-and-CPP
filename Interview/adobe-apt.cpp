@@ -119,7 +119,7 @@ Hindemith, Mahier, Mozart
 Haydn, Hindemith, Mahler
 
 Answer:-TODO
-       -----------------------------------------------------------------------------------------------------
+                        ---------------------------------------------------
 Question 2:-
 Which of the following can not be true? Pick one of the choices
 George prefers Mahler to Bartok
@@ -129,7 +129,7 @@ George prefers Mozart to Beethoven
 George prefers Mahler to Haydn
 
 Answer:-TODO
-      -------------------------------------------------------------------------------------------------------
+                         ------------------------------------------------------
 Question 3:-
 George’s mother also gives him one recording by each composer mentioned. Which of the following can not occur? Pick one of the
 George plays the Beethoven first
@@ -139,7 +139,7 @@ George plays the Beethoven fifth
 George plays the Bartok last
 
 Answer:-TODO
-      -------------------------------------------------------------------------------------------------------
+                           ----------------------------------------------------
 Question 4:-
 George’s father gives him several records.If the first record he plays is by Berlioz, 
 which of following must be true? Pick one of the  choices
@@ -151,3 +151,42 @@ There is no record by Beethoven
 
 Answer:-TODO
 ====================================================================================================================
+At a baseball game, five men; L, M, N, 0 and P, and five women, S, T, U, V and W, occupy a row
+of ten seats. The men are in odd-numbered seats, starting from the left; each woman sits to the
+right of the man she is dating.
+(2) 0 is V’s date
+(3) W is not at the right end of the row and the man the is dating is not at the left end of the row.
+(4) The man dating W likes T best among the other women and insists on being seated to the right of
+T.
+(5) N is one seat from the right end of the row.
+(6) M and his date occupy the middle pair of seats
+(7) V sits next to M.
+
+Question 1:-
+
+Which of the following could be determined exactly if the position of either L or P were given pick one of the choices
+(A) The identity of L‟s date 
+(B) The identity of P‟s date 
+(C) The identity of L‟s date or P‟s date, but not both 
+(D) Which woman is no seated between two men 
+
+
+Answer:- The identity of L’s date or P’s date, but not both(Answer By Ajay)
+
+               -------------------------------------------------------------
+Question 2:-
+Which of the following lists five persons who must sit adjacent to one another,
+from left to right
+
+(A) U, V, O, M, T (B) M, T, L, W, L
+(C) O, V, M, T, W (D) O, V, M, T and either L or P
+
+Answer:- D
+              ---------------------------------------------------------------
+Question 3:-
+In order to determine the position of T, it is necessary to use how many of the numbered statements?
+Pick one of the choices
+
+a)3  b)4  c)6  d)7
+Answer:- TODO
+=================================================================================================================
