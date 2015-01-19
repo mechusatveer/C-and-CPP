@@ -119,3 +119,35 @@ Hindemith, Mahier, Mozart
 Haydn, Hindemith, Mahler
 
 Answer:-TODO
+       -----------------------------------------------------------------------------------------------------
+Question 2:-
+Which of the following can not be true? Pick one of the choices
+George prefers Mahler to Bartok
+George prefers Beethoven to Mahler
+George prefers Bartok to Mozart
+George prefers Mozart to Beethoven
+George prefers Mahler to Haydn
+
+Answer:-TODO
+      -------------------------------------------------------------------------------------------------------
+Question 3:-
+George’s mother also gives him one recording by each composer mentioned. Which of the following can not occur? Pick one of the
+George plays the Beethoven first
+George plays the Haydn first
+George plays the Mahler third
+George plays the Beethoven fifth
+George plays the Bartok last
+
+Answer:-TODO
+      -------------------------------------------------------------------------------------------------------
+Question 4:-
+George’s father gives him several records.If the first record he plays is by Berlioz, 
+which of following must be true? Pick one of the  choices
+There Is no record by Hindemith
+There is no record by Bartok
+One of the records may be by Haydn
+If there Is a record by Haydn, George will play It second
+There is no record by Beethoven
+
+Answer:-TODO
+====================================================================================================================
