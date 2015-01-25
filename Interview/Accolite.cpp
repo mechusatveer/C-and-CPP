@@ -185,4 +185,7 @@ int main()
 DerivedEngine::SetStateBool() called
 DerivedEngine::SetStateInt() called
 
+ I see that a derived class can override its base class private virtual method
+ but it cannot use it. So, this is essentially a Template Method pattern
+
 ---------------------------------------------------------------------------------
