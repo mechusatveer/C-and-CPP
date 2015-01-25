@@ -200,4 +200,50 @@ DerivedEngine::SetStateInt() called
    A public virtual method would define both interface and a customization point, 
    a duality that could reflect weak design.
    
-   
+   The following code may seem strange at first sight:
+
+class Base
+{
+private:
+   virtual void f() = 0;
+};
+How can a pure virtual function be private? Will the derived class be able to override it? Actually, 
+it's possible for pure virtual functions to have any access modifier: private, protected, or public. 
+Moreover, you can also change their access levels when they're overridden in a derived class:
+
+class Derived : public Base
+{
+public:
+   void f()
+   {
+      std::cout << "Overloaded public f() in Derived class\n";
+   }
+};
+---------------------------------------------------------------------------
+When to Declare a Virtual Member Function Private
+
+Declaring a virtual member function private may be useful when you wish to limit 
+the number of derived classes that can override the given function. In such a case,
+you declare all the derived classes, which will be able to override the private virtual 
+member function as friends of the base class.
+
+In the following example, only B can override the member function f().
+ 
+class A {
+  friend class B;
+private:
+  virtual int f() { return 1; }
+};
+
+class B : public A {
+private:
+  virtual int f() { return 2; }
+};
+
+class C : public A { // will use A::f(), cannot _
+override it
+};
+
+class D : public B { // will use B::f(), cannot _
+override it
+};
