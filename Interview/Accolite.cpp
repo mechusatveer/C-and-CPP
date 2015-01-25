@@ -182,4 +182,7 @@ int main()
   be->SetState(2, 1000);
 }
 
+DerivedEngine::SetStateBool() called
+DerivedEngine::SetStateInt() called
+
 ---------------------------------------------------------------------------------
