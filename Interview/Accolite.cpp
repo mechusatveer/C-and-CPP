@@ -189,3 +189,15 @@ DerivedEngine::SetStateInt() called
  but it cannot use it. So, this is essentially a Template Method pattern
 
 ---------------------------------------------------------------------------------
+ When should someone use private virtuals?
+ 
+ When you need to make specific behavior in a base class customizable in derived classes,
+ while protecting the semantics of the interface
+ One case where private virtuals show up is when implementing the Template Method design pattern.
+  it as a best practice to always define virtual methods private, unless there is
+  a good reason to make them protected
+  
+   A public virtual method would define both interface and a customization point, 
+   a duality that could reflect weak design.
+   
+   
