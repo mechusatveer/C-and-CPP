@@ -22,3 +22,6 @@ int main()
   getchar();
   return 0;
 }
+
+++a = 20 its ok pre increment can be used as l value
+a++ = 20 error
