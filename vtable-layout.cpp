@@ -1,3 +1,6 @@
+http://stackoverflow.com/questions/15921372/c-virtual-table-layout-of-mimultiple-inheritance
+
+
 class B1
 {
 public:
